@@ -1,0 +1,17 @@
+{
+    "10001": {
+        "chinese": 120,
+        "math": 140,
+        "english": 130
+    },
+    "10002": {
+        "chinese": 80,
+        "math": 50,
+        "english": 150
+    },
+    "10003": {
+        "chinese": 20,
+        "math": 40,
+        "english": 30
+    }
+}
