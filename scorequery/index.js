@@ -1,7 +1,3 @@
-// 动态网站
-// 根据不同请求路径和参数传递得到不同的内容，浏览器获得的是服务器动态生成的
-// 期末开始成绩查询
-
 // 创建一个服务器
 const http = require('http');
 const fs = require('fs');
@@ -11,7 +7,7 @@ const scoreData = require('./scores.json');
 const template = require('art-template');
 
 http.createServer((req, res) => {
-    // 查询成绩的入口地址   /query    // 对请求路径进行判断
+    // 查询成绩的入口地址     // 对请求路径进行判断
     if (req.url.startsWith('/query') && req.method == 'GET') {
         let content = template(path.join(__dirname, "view", "index.art"), {})
         res.end(content);
